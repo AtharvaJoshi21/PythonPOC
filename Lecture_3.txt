@@ -1,0 +1,30 @@
+Phases of compilation
+1. Tokenization
+2. Syntax analysis
+3. Semantic analysis
+4. Intermediate code generation
+5. Code optimization
+6. Target code
+
+
+Python implements automatic garbage collection with reference count mechanism
+
+Python follows reference data model over value data model.
+
+Python distinguishes containers based on type of parantheses.
+
+Python interpreter assigns a memory to integer values ranging from -5 to 256 on startup.
+
+Python Strings - 
+
+1. Indexing of strings start from 0
+2. Python does reverse negative indexing.
+3. There are no character constants, only string constants in python.
+4. String is immutable type.
+
+Slicing of strings - 
+1. string[ start_index : end_index [ : step_value ] ]
+start_index is inclusive (If not specified, default value is start of the string)
+end_index is exclusive (If not specified, default value is end of the string)
+step_value is optional with default value 1
+
