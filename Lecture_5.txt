@@ -1,0 +1,36 @@
+Control Flow
+- Sequence of flow
+- Selection
+	1. if...else
+	syntax - 
+	if <condition>:
+		<body of if>
+	else :
+		<body of else>
+		
+	2. if <condition> :
+			<body of if>
+		elif <condition> :
+			<body of elif>
+		.
+		.
+		.
+		.
+		else :
+			<body of else>
+			
+	3. Nested if...else:
+		if <condition1> :
+			<body of if>
+			if <condition2> :
+				<body of if>
+				
+				
+
+* Python supports multi-way assignment e.g. x,y = 10, 20
+
+Q1. WAP two accept two numbers and subtract min from max and print result of subtraction
+Q2. WAP three numbers and print max of them.
+Q3. WAP three numbers and print min of them.
+Q4. Rewrite the validation of string rotation using if...else
+Q5. WAP to accept a sentence from user and replace the not bad construct, if found, with good construct. e.g. (australia played not bad but they lost -> australia played good but they lost)

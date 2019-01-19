@@ -1,0 +1,45 @@
+Containers in Python - 
+1. String
+2. List
+3. Tuple (Immutable/Constant List)
+4. Set (associative elements with unique values)
+5. Dictionary 
+
+Operators in Python - 
+	1. Arity (Unary/Binary)
+	2. Precedance (BODMAS rule)
+	3. Associativity (All operators except unary and combinational assignments have Left To Right associativity)
+	
+1. Arithmetic Operators :-
+	a. Unary
+	b. Binary
+		1. +,-,*,%
+		2. // (Floor division)
+		3. ** (Exponential)
+		
+2. Relational Operators :- <, >, >=, <=, !=, <>(Python 2.7), ==
+
+3. Logical Operators :- and, or, not
+	- Returns 'True' or 'False'
+
+4. Membership Operators :- 'in' and 'not in'
+	- Returns 'True' or 'False'
+	
+5. Identity Operators :- 'is' and 'is not'
+	- Returns 'True' or 'False'
+	
+6. Bitwise Operators :-
+	- & (Turning off bit(s)) 
+	- | (Turning on bit(s))
+	- ^ (Toggle bit(s))
+	- ~ (Bit inversion)
+	- << (Left shift)
+	- >> (Arithmetic (for negative numbers (add sign bit)) or Logical Right shift (add 0))
+	
+	
+Homework -
+
+1. Go through Presentation 2
+2. WAP to accept a string from user and check if it starts with 'T'
+3. WAP to accept two strings from user and check if second string is rotation of first.
+4. WAP to accept a string from user and convert it to lowercase, uppercase.
