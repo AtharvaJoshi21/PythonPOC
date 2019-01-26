@@ -1,3 +1,4 @@
+#WAP to accept a string from user and replace all occurrances of first character except for the first character.
 name = input("Please enter a string: ")
 replaceToken = input("Please enter token to replace: ")
 print (name)

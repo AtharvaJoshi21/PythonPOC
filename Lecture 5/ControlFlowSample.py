@@ -1,3 +1,5 @@
+#WAP to accept two numbers from user and print positive subtraction of two.
+
 num1, num2 = eval(input("Enter two numbers : "))
 
 if num1 > num2 :

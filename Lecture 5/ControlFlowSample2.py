@@ -1,3 +1,5 @@
+#WAP to accept three numbers from user and print maximum of them.
+
 num1, num2, num3 = eval(input("Please enter three numbers: "))
 
 print ('The greatest number is :')
