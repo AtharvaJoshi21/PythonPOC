@@ -1,0 +1,29 @@
+Loops
+
+1. For loop - 
+
+	- syntax :- 
+		for <loop_variable> in <iterable_container>:
+			<body_of_for>
+	- e.g.
+		for x in range(10): //range is an built in library function to generate a list container //range(start_index, [end_index, [step_value]])
+			print (x)
+		output: prints 0 to 9
+		
+		//Time delay loops or Do nothing loops
+		for _ in range(10000): // '_' is an anonymous vairable
+			pass					   // continue
+
+
+2. While loop - 
+
+	- syntax:-
+		while <condition>:
+			<body_of_while>
+
+
+
+
+HW - 
+1. WAP to accept integer n from user and print tables from 2 to n.
+2. Write all the previous exercises using functions.
