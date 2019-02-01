@@ -1,0 +1,19 @@
+Control Flow -
+1. Sequencing
+2. Selection (if..else, if...elif...else)
+3. Repetition
+	- enumeration controlled (for)
+	- logically controlled (while)
+4. Jump statements
+	- break (breaks the repition)
+	- continue (it skips the current loop pass and executes next iteration)
+	- return (return control to the caller)
+5. Functions
+6. Recursion
+
+- Python can have main() as an entry point
+- Every python script is known as module
+- Python interpreter has "__name__" as a global vairable with a default value is "__main__".
+- __name__ can be accessed by two ways:
+	- as executable (>>>python3 <filename>.py) - __name__ will have '__main__'
+	- as reusable module (import <filename>) - __name__ will have 'filename'
