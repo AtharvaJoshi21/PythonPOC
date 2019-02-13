@@ -24,7 +24,7 @@ def main():
 		print('5. Exit')
 		ch = eval(input('Please select the operation to perform: '))
 		
-		if ch != 5:
+		if ch > 0 and ch < 5:
 			int1, int2 = eval(input('Enter two numbers: '))
 		
 		if	ch == 1:
@@ -35,8 +35,10 @@ def main():
 			print('Multiplication is: ', Multiply(int1,int2))
 		elif ch == 4:
 			print('Division is: ', Divide(int1,int2))	
-		else:
+		elif ch == 5:
 			print('Good bye!')
+		else:
+			print ('Invalid Choice!')
 
 if __name__ == '__main__':
 	main()
