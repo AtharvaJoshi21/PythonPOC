@@ -1,0 +1,33 @@
+Lecture 13 Assignments - 
+1. WAP to accept a list from user and print it element by element in reverse order using recursion.
+2. WAP to print string in reverse order recursively.
+4. WAP to accept two lists from user, sort them and merge two sorted lists, element by element preserving the sort order
+
+Stack frame ->
+
+def RecursiveReverse(list):
+	if len(list) == 0:
+		return 'List is empty'
+	else:
+		RecursiveReverse(list[1::])
+		print (list[0])
+
+6. RecursiveReverse([])									return
+5. RecursiveReverse([4])									RecursiveReverse([])						print 4
+4. RecursiveReverse([3,4])								RecursiveReverse([4])						print 3
+3. RecursiveReverse([2,3,4])							RecursiveReverse([3,4])					print 2
+2. RecursiveReverse([1,2,3,4])							RecursiveReverse([2,3,4])				print 1
+1. main()														RecursiveReverse([1,2,3,4])
+
+
+HW
+1. WAP to reverse any container in separate functions
+2. WAP to accept two lists from user and find union of them
+3. WAP to accept two lists from user and find intersection of them
+4. WAP to accept two lists from user and find symmetric difference of them (exclude common elements) [l1 - l2 union l2 - l1]
+5. WAP to check if 
+	a. L2 Is Subset of L1
+	b. L2 is disjoint of L1
+	c. L2 is superset of L1
+	
+sandesh897sonje@gmail.com
