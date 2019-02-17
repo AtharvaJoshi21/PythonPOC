@@ -1,0 +1,22 @@
+Containers - 
+
+1. List 
+	- Collection of heterogeneous elements
+	- It's mutable container
+	
+Assignments - 	
+1. WAP to remove all occurrances of given data from list
+2. WAP to implement stack operations on list
+3. WAP to accept a list of integers from user and check if it's sorted or not
+4. WAP to accept an unsorted list of integers from user and sort it
+
+HW
+1. WAP to demonstrate queue DS using list with following menu driven interfaces
+	a. Enqueue 
+	b. Dequeue 
+	c.IsQueueEmpty 
+	d. IsQueueFull 
+	
+2. WAP to accept an unsorted list of integers from user and sort it using 
+	a. Bubble Sort
+	b. Insertion Sort
