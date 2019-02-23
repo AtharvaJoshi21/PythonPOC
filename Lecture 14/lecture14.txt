@@ -1,0 +1,233 @@
+#  Lectrue 14  23 FEb 2019
+
+Assignments 
+1. WAP to accept list of intergers and check list is palindrome of not.
+
+HW Assignments
+1. Read about frozen set try to use nad invoke methods
+2. Implement fromkeys method which will ensure that if value is list then assign each element of list to each different corresponding key of dictionary.
+
+Containers
+
+2. Tuple
+
+	- Tuple is immutable container
+	- Index based container
+	- You can convert tuple to another container.
+
+		>>> tp1=(1,2,3)
+		>>> print(tp1)
+		(1, 2, 3)
+		>>> type(tp1)
+		<class 'tuple'>
+		help(tuple)
+
+3. Set
+	- Set is unordered entity
+	- Set is collection of unique elements
+
+		>>> y={'a','s','d','e','s','f','a'}
+		>>> print(y)
+		{'e', 'd', 'f', 's', 'a'}
+		>>>
+		
+		- set() accepts only one arg so we have passed tuple to it and it converts it to set
+		>>> x=set((1,2,3,4,5))
+		>>> print(x)
+		{1, 2, 3, 4, 5}
+		
+		>>> x=set("aabcadeef")
+		>>> print(x)
+		{'e', 'b', 'd', 'f', 'c', 'a'}
+		>>>
+
+	- Set is an associative container, which means, key is hidden which is internally mapped to value.
+	- Set internally perform hashing for each data key is unique
+	- Not an index based iterator container
+
+		>>> x={1,2,3,4}
+		>>> print(x)
+		{1, 2, 3, 4}
+		>>> x.add(5)
+		>>> print(x)
+		{1, 2, 3, 4, 5}
+
+		help(set)
+
+		>>> x={1,2,3,4,5}
+		>>> y={1,3,5}
+		>>> x.difference(y)
+		{2, 4}
+		
+		>>> x={1,2,3,4,5}
+		>>> y={1,3,5}
+		>>> x - y
+		{2, 4}
+		>>> y - x
+		set()
+		>>>
+
+		>>> print(x)
+		{1, 2, 3, 4, 5}
+		>>> print(y)
+		{1, 2, 3}
+		>>> x.difference_update(y)		## upadtes set x with difference
+		>>> print(x)
+		{4, 5}
+		
+		>>> x.discard(2)
+		>>> print(x)
+		{1, 3, 4, 5}
+		
+		>>> x={1,2,3,4,5}
+		>>> y={1,3,5,6}
+		>>> x.intersection(y)
+		{1, 3, 5}
+
+		>>> x={1,2,3,4,5}
+		>>> y={6,7}
+		>>> x.isdisjoint(y)
+		True
+		>>> y={1,3,5,6}
+		>>> x.isdisjoint(y)
+		False
+
+		>>> x={1,2,3,4,5}
+		>>> y={1,3,5}
+		>>> x.issubset(y)
+		False
+		>>> y.issubset(x)
+		True
+		>>> x.issuperset(y)
+		True
+		>>> y.issuperset(x)
+		False
+
+		>>> x={1,2,3,4,5}
+		>>> y={1,3,5,6}
+		>>>
+		>>> x.symmetric_difference(y)
+		{2, 4, 6}
+
+		>>> x.update(y)   ## similar to union
+		>>> print(x)
+		{1, 2, 3, 4, 5, 6}
+
+		>>> x={1,2,3,4,5}
+		>>> y={1,3,5,6}
+		>>> x&y
+		{1, 3, 5}
+		>>> x<y
+		False
+		>>> x>y
+		False
+		>>> y.remove(6)
+		>>> x<y
+		False
+		>>> x>y
+		True
+
+		>>> x={1,2,3,4,5}
+		>>> y={1,3,5,6,7}
+		>>> x|y					# here does not updates x or y
+		{1, 2, 3, 4, 5, 6, 7}
+		>>> x|=y				# here it updates x 	
+		>>> print(x)
+		{1, 2, 3, 4, 5, 6, 7}
+		>>> print(y)
+		{1, 3, 5, 6, 7}
+		>>>
+		
+		>>> x={1,2,3,4,5}
+		>>> y={1,3,5,6}
+		>>> x == y
+		False
+		>>> x == x
+		True
+		>>> z={8,9}
+		>>> x == z
+		False
+	
+COPY Module
+	- Creates copy of elsemnts but does not creates copy of internal containers . it copies all other elements and creates reference to container.
+	- This is called shallow copy.
+	
+		>>> x=[1,2,3]
+		>>> y=[x,5,6]
+		>>> z=[x,8,9]
+		>>> print(x)
+		[1, 2, 3]
+		>>> print(y)
+		[[1, 2, 3], 5, 6]
+		>>> print(z)
+		[[1, 2, 3], 8, 9]
+		>>> a=z.copy()		#creates copy does not affect z
+		>>> print(a)
+		[[1, 2, 3], 8, 9]
+		>>> a.append(10)
+		>>> print(a)
+		[[1, 2, 3], 8, 9, 10]
+		>>> print(z)
+		[[1, 2, 3], 8, 9]
+
+		>>> a[0].append(11)		# if we change internal container value will affect a and z both. 
+		>>> print(a)
+		[[1, 2, 3, 11], 8, 9, 10]
+		>>> print(z)
+		[[1, 2, 3, 11], 8, 9]
+	
+	- To create deep copy 
+	
+		import copy		#built in module for copy
+
+		>>> import copy
+		>>> c=copy.deepcopy(z)
+		>>> print(c)
+		[[1, 2, 3, 11], 8, 9]
+		>>> print(z)
+		[[1, 2, 3, 11], 8, 9]
+		>>> c[0].append(100)
+		>>> print(c)
+		[[1, 2, 3, 11, 100], 8, 9]
+		>>> print(z)
+		[[1, 2, 3, 11], 8, 9]
+		>>>
+
+	- To iterate in set use for loop like string,list...
+
+
+4. dictionary
+	- All elements are comma separated key:value 
+	- Unordered entity
+
+		>>> x={"name":"asdsfd","age":21}
+		>>> print(x)
+		{'name': 'asdsfd', 'age': 21}
+
+		for k in x:
+		...     print(k)
+		...
+		name
+		age
+
+		>>> for k in x:
+		...     print(k,x[k])
+		...
+		name asdsfd
+		age 21
+		>>>
+
+		>>> y={1: 1,2: 2,3: 3}
+		>>> dict.fromkeys(y)			#to use and create new dictionarywith same keys
+		{1: None, 2: None, 3: None}
+
+		>>> z=dict.fromkeys(y)
+		>>> print(z)
+		{1: None, 2: None, 3: None}
+		>>> z=dict.fromkeys(y,('a','b','c'))
+		>>> print(z)
+		{1: ('a', 'b', 'c'), 2: ('a', 'b', 'c'), 3: ('a', 'b', 'c')}
+		>>> z=dict.fromkeys(y,'aaaaaaa')
+		>>> print(z)
+		{1: 'aaaaaaa', 2: 'aaaaaaa', 3: 'aaaaaaa'}
+		>>>
