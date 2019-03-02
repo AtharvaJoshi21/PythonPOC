@@ -1,0 +1,29 @@
+
+Dictionaries in Python
+
+File handling in Python
+
+    - File is stream of bytes
+    - Operations performed on files and interface for which is provided by OS
+        1. Open
+            - >>> fd = open("a.txt") => open(filename, [mode = read])
+        2. Read
+        3. Write
+        4. Seek
+        5. Close
+
+Assignments - 
+
+1. WAP to accept a sentence from user and return a dictionary containing count of each characters occurring in it
+    e.g. India is my country => {a:1, I: 3...}
+2. WAP to accept paragraph from user and return a dictionary of count of words in the given paragraph.
+3. WAP to accept a number n from user and return a dictionary of squares from 1 to n.
+
+
+HW Assignments - 
+
+1. WAP to accept a sentence which contains upper case and lower case characters. Return a dictionary containing count of total number of lower case and total number of upper case characters
+2. help('fd') and explore
+    - read()
+    - readline()
+    - seek()
