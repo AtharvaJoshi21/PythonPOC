@@ -1,0 +1,5 @@
+Some text which contains the word once.
+Some the text which contains the word twice.
+Some the text which the contains the word thrice.
+Some the text the which the contains the word four times.
+Some text which doesn't contain word.
