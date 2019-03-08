@@ -1,0 +1,20 @@
+File Handling
+    - read([noOfBytes]) => reads no of bytes specified (if given), default reads whole file
+    - readline() => reads file line by line
+    - readlines() => reads whole file and returns list containing lines of file
+
+Assignments - 
+1. WAP to accept a file from user and print it line by line
+2. WAP to accept a file from user and print those lines who have <= 80 characters. Also print line numbers which have more than 80 characters stating that lines are having more than standard count of characters
+3. WAP to accept a file from user and print shortest and longest line from that file.
+
+HW Assignments - 
+WAP to accept a filename from user and -
+    1. print those lines which have "the" more than once.
+    2. print it in reverse order. Lines should be read only once and not using "readlines()" [Hint: Recursion]
+3. WAP to accept a config file from user and create a dictionary of config settings defined in it.
+4. WAP to accept a filneame from user and print alternate 10 characters from it.
+    - Hints
+        1. Use "seek()" for moving cursor.
+        2. Use "import IO" for Python 3.x as there is no backward compatibility
+**Points to be remembered - Internal operations performed by OS while opening a file for File IO Operations.
