@@ -1,0 +1,28 @@
+File Handling
+    - fd.fileno() => return 3
+        - By default, every application opens three files prior, stdin, stdout and stderr
+    
+    File reading steps => open("a.txt", "r")
+        1. construct absolute path and run "namei" algorithm and get the inode number for file
+        2. after getting inode number run "iget" algo to get the inode onto RAM
+        3. file descriptor is stored in user file descriptor table in u area
+        4. offset is stored in file table (because of shared offset*)
+
+* FD_CLOEXEX => opens the file for parent process and closes for child process
+
+Advanced Programming in Unix Environment - W Richard Stevens
+
+Assignments - 
+1. Read petrol prices in Maharashtra, Goa and Karnataka
+    - output avg petrol prices for year.
+
+HW Assignments - 
+1. WAP to accept a filename from user and print its statistical information, like type of file, size of file, permissions.
+    - Hint - Use "stat" and "fsts" system calls
+2. WAP to accept a filename from user and no of lines to be copied to another file. Accept inputs and cmd line params.
+    - Hint - Import sys module for accepting cmd line params
+3. WAP to accept a folder name from user and create zip file out of contents of it.
+    - Hint - help('shutil')
+4. Read about 
+    - ArgParse module
+    - fileinput, filecmp, tempfile modules

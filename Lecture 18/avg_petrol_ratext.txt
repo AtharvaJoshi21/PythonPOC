@@ -1,0 +1,2 @@
+Average Petrol rates are: 
+Mahrashtra: 80.58333333333333, Goa: 58.083333333333336, Karnataka: 58.083333333333336
