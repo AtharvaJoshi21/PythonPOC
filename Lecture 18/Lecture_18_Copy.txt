@@ -1,0 +1,6 @@
+File Handling
+    - fd.fileno() => return 3
+        - By default, every application opens three files prior, stdin, stdout and stderr
+    
+    File reading steps => open("a.txt", "r")
+        1. construct absolute path and run "namei" algorithm and get the inode number for file
