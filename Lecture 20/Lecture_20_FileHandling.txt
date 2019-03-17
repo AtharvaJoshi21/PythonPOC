@@ -1,0 +1,8 @@
+File Handling
+    - "openpyxl" module for handling Excel files
+    - openpyxl.workbook for accessing the workbook
+    - openpyxl.workbook[<SheetName>] for accessing sheet SheetName
+    - openpyxl.workbook[<SheetName>].iter_rows() / openpyxl.workbook[<SheetName>].iter_cols() for iterating rows / cols
+
+Assignments 
+1. WAP to read columns from an excel sheet and create a vcf out of columns.
