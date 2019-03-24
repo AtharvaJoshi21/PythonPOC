@@ -1,0 +1,9 @@
+IPC mechanisms
+    - Socket
+    - Message passing
+    - Pipes
+    - Shared Memory
+
+SubProcess module
+    - For executing system commands from Python, e.g. Launch a program from Python script.
+    - Spawns new process

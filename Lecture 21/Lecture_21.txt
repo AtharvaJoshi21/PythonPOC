@@ -1,0 +1,11 @@
+Python OOP - 
+    - Reusability (achieved using polymorphism)
+        - "has-a" relationship => Containment
+        - "is-a" relationship => Inheritences
+
+Object
+    - Represents any real world entity
+    - Has an unique identity
+    - Has attributes 
+    - State (values of attributes at a given point of time) => dynamic and static
+    - Has a responsibility which is achieved through behaviour
