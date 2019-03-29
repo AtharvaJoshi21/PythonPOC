@@ -1,0 +1,11 @@
+    - argparse module
+        - parser = argparse.ArgumentParse() => will instantiate argument parser class
+        - parser.add_argument(token, [type, help, required=bool]) => will setup argument(s) list
+        - 
+    - shutil module
+
+Serialization
+    - Transformation to stream of bytes
+
+HW Assignment
+1. Use optionparser module to implement copying file data from src to dest
