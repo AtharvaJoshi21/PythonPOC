@@ -1,0 +1,14 @@
+SubProcess module
+    - Popen
+
+Assignments - 
+1. WAP to demo Popen function of subprocess module
+2. WAP to accept an input file name, output file name and error file name from user using subprocess.Popen. Ensure that word count, char count and line count of input file are returned to output file.
+3. WAP which runs periodically and displays the status of currently running processes.
+
+HW Assignments - 
+1. WAP to accept a command to be executed as a cmd line arg. Execute the command provided and print output of the same.
+2. WAP to explore "psutil" module. ("psutil" added by Google Inc., similar to subprocess)
+    - import os => os.getpid()
+    - psutil.process(os.getpid()) => returns process handle
+    - print the process handle
