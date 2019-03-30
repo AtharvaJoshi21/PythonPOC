@@ -1,0 +1,35 @@
+Python as OOPL
+    - Abstraction
+        - Data abstraction => hiding Data
+        - Control abstraction => hiding behaviour
+    - Encapsulation
+        - binding data and functions that operate on that data, together
+    - Reusability
+        - Inheritence
+        - Containment
+    - Polymorphism
+        - One interface, multiple functions
+
+Classes in Python - 
+    - Constructor => "__init__()"
+    - Destructor => "__del__()"
+    - self => reference to calling object (Similar to "this" pointer)
+    - All the attributes MUST BE declared in "init" function
+    - Python doesn't have access specifiers, so in order to make attribute private, rename it like "__<attribute_name>}*
+    - Class is also an object in Python, due to which we can create classes RUNTIME.
+    - Python treats object as DICTIONARY internally.
+    - Python lets you add RUNTIME ATTRIBUTES in classes (Object specific attributes for objects of same type).
+        - In this case, if the attribute is not found for some object, exception will be raised which should be handled appropriately.
+    - To print the customized version of class, use "__repr__()" method
+    - In order to support operator overloading, override "__<name>__" functions
+
+Assignments -
+1. WAP to demo implementation of Stack using classes in Python.
+
+HW Assignments - 
+1. WAP to demo implementation of Queue using classes in Python. [Menu driven]
+2. WAP to implement bank account class which supports Deposit and Withdraw methods.
+    - Auto generate account number, by taking one class attribute**
+
+*Note - private members can be accessed like "_<ClassName>__<AttributeName>"
+**Note - class attribute is shared across all the objects of particular class.
