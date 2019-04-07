@@ -25,6 +25,10 @@ Classes in Python -
 
 Assignments -
 1. WAP to demo implementation of Stack using classes in Python.
+2. WAP to implement complex number using Class and perform following operations
+    - Add a complex number
+    - Subtract a complex number
+    - Multiply a complex number by an integer
 
 HW Assignments - 
 1. WAP to demo implementation of Queue using classes in Python. [Menu driven]

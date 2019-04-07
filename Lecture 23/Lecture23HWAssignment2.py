@@ -6,6 +6,8 @@ class BankAccount:
     minAccountBalance = 1000
     def __init__(self, initialBalance):
         self.__balance = initialBalance
+        self.__accountNo = BankAccount.accountNumber
+        BankAccount.accountNumber += 1
     
     def __del__(self):
         del self.__balance
@@ -18,11 +20,13 @@ class BankAccount:
         return True
     
     def Withdraw(self, amount):
-        if (self.__balance - amount) < self.minAccountBalance:
-            return False
+        if self.__balance < amount:
+            return -1
+        elif (self.__balance - amount) < self.minAccountBalance:
+            return 0
         else:
             self.__balance -= amount
-            return True
+            return 1
 
 def DisplayMenu(bankAcc):
     ch = 1
@@ -38,11 +42,13 @@ def DisplayMenu(bankAcc):
         elif ch == 2:
             amount = eval(input("Please enter amount to be withdrawn: "))
             result = bankAcc.Withdraw(amount)
-            if result:
+            if result == 1:
                 print("Transaction Successful! Updated balance is: ")
                 print(bankAcc)
-            else:
+            elif result == 0:
                 print("Transaction declined as minimum account balance will not be maintained")
+            else:
+                print("Invalid amount entered!")
         
         elif ch == 3:
             amount = eval(input("Please enter amount to be deposited: "))
