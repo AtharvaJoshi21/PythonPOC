@@ -1,0 +1,17 @@
+Python as OOPL
+    - In order to allow object and / or propert(ies) of object being sliced, provide implementation of "__getitem__()" method
+
+Assignments - 
+1. WAP to implement operator overloaded slicing logic on list.
+2. WAP to implement Student management system.
+    - Student class should have - Name, Address, DOB, Course, Division, ListOfMarks
+    - Implement Getters and Setters
+    - AddStudent(), SuspendStudent(), UpdateAddress(), UpdateMarks(), PrintAllStudentDetails() and PrintPercentage()
+
+HW Assignments - 
+1. WAP to create menu driven interface for StudentManager class operations.
+    - Accept number of students from user
+    - While printing student details print their percentage
+2. WAP to implement employee management system.
+    - Appraise, Kick, Onboard
+    - Awards - list of awards to be maintained
