@@ -148,53 +148,9 @@ def UnitTestStudentManager():
     stM.updateMarks(1, "Algebra", 73)
     print(stM.getEnrolledStudents()[1])
 
-def DisplayStudentManagementMenu(studMgr):
-    ch = 1
-    while ch != 0:
-        print("1. Get List of All Students")
-        print("1. Get List of Enrolled Students List")
-        print("2. Get List of Suspended Students List")
-        print("3. Get Details of Student")
-        print("4. Enroll Student")
-        print("5. Suspend Student")
-        print("6. Update Address")
-        print("7. Update Division")
-        print("8. Update Course")
-        print("9. Update Marks")
-        print("10. Exit")
-        ch = eval(input("Please enter your choice: "))
-        if ch == 1:
-            print(studMgr.getEnrolledStudents())
-        elif ch == 2:
-            print(studMgr.getSuspendedStudents())
-        elif ch == 3:
-            inputRollNo = eval(input("Please enter roll number to be searched: "))
-            print(studMgr.getStudentDetails(inputRollNo))
-        elif ch == 4:
-            pass
-        elif ch == 5:
-            pass
-        elif ch == 6:
-            pass
-        elif ch == 7:
-            pass
-        elif ch == 8:
-            pass
-        elif ch == 9:
-            pass
-        elif ch == 10:
-            print("Exiting...")
-            break
-        else:
-            print("Invalid Choice!")
-            continue
-
 def main():
     # UnitTestStudent()
-    # UnitTestStudentManager()
-    inputNoOfStudents = eval(input("Please enter the number of students: "))
-    studMgr = StudentManager(inputNoOfStudents)
-    DisplayStudentManagementMenu(studMgr)
+    UnitTestStudentManager()
 
 if __name__ == "__main__":
     main()
