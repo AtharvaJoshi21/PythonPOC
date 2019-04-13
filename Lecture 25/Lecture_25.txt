@@ -1,0 +1,36 @@
+Python as OOPL
+    - Inheritence in 
+        - Inheritence can be achieved in Python by following syntax
+            class ChildClass(BaseClass):
+                def __init__(self):
+                    BaseClass.__init__(self)
+        - As python is interpreted language, "Diamond Problem" doesn't occur in multiple Inheritence
+            e.g. 
+            1. D Inherites from B and C => class D(B, C)
+            2. B, C Inherites from A => class B(A), class C(A)
+            3. MRO (Method Resolution Order)
+                - In 2.x (Without inherting from Object class) => D->B->A, D->C->A [(<class __main__.D at 0x7efde8523188>, <class __main__.B at 0x7efde85230b8>, <class __main__.A at 0x7efde8523050>, <class __main__.C at 0x7efde8523120>)]
+                - In 3.x => D->B, D->C, B->A and C->A [(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)]
+                Reason for this is, in 2.x class doesn't inherit by default from "object" class,
+                resulting in MRO being Base1-Base0...
+                In 3.x MRO is Base1-Base2-Base0
+    - Polymorphism in 
+        - As python is interpreted language, polymorphism is an integral part of Python
+    - Callable objects
+        - override "__call__()" method to make object callable. [BTS - "()" operator is overloaded]
+    - Static Methods
+        - use "@staticmethod" Decorator*
+    - Class methods
+        - Python supports Class methods, as class in python is also an object
+        - Expects class as input param, in case we are calling from object of the specified class
+
+Assignments
+1. Student management system using Inheritence
+2. WAP to demonstrate Multiple Inheritence in Python
+3. WAP to demonstrate callable object implementation in python
+4. WAP to demonstrate static methods in Python
+
+HW Assignments
+1. Design Library Management System.
+
+*Read - Decorators in Python
