@@ -1,0 +1,20 @@
+Exception Handling in Python
+    - "try...except...else...finally" block
+    - "try" for code script under evaluation
+    - "except" for catching exceptions
+    - "else" for excuting a code script if no exception has occurred
+    - "finally" block will be executed ALWAYS. If any "except" block is not there, "finally" block MUST BE present.
+    - "raise" for throwing an exception
+    - e.g.
+        try:
+            <code_under_evaluation>
+        except <exceptionType> as <alias>:
+            <exception_processing_code>
+    - Specialized exceptions MUST BE handled before generalized
+        - e.g. NameError must be handled before Exception
+
+Assignments -
+1. WAP to demonstrate simple exception handling in Python
+2. WAP to demonstrate multiple exception blocks
+3. WAP to demonstrate finally block execution and nested try except
+4. WAP to demonstrate user defined exceptions

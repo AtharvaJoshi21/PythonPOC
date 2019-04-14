@@ -1,0 +1,6 @@
+Regular Expressions in Python
+    - "re" module in Python deals with RegEx matching
+
+HW Assignments
+1. Explore "re" module
+2. Significance of "compile" method
