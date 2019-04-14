@@ -4,3 +4,4 @@ Regular Expressions in Python
 HW Assignments
 1. Explore "re" module
 2. Significance of "compile" method
+3. Read Presentation - python_re
