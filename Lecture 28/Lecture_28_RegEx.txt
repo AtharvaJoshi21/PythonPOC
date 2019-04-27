@@ -1,0 +1,28 @@
+Regular Expressions in Python
+    - \b => to match empty string but only at start or end of string
+    - \d => to match any digit characters
+    - \D => to match any non digits characters
+    - \s => whitespace characters [\t\n]
+
+Assignments
+1. WAP to read input file and read words starting with T/t and ending with E/e from it. [Hint: Use IGNORECASE flag of re module]
+2. WAP to accept a filename from user and print all digits from it.
+
+
+Patterns
+1. either a or b => a|b or [ab]
+2. a followed by a or b => a[ab]+
+3. a followed by a or b non-greedy => a[ab]+?
+4. sequences without -,. or space => [^-,.\s]
+5. sequences of lowercase letters => [a-z]+
+6. sequences of uppercase letters => [A-Z]+
+7. one upper case followed by lower case letters => [A-Z][a-z]+
+
+HW Assignments
+1. WAP to accept a filename from user and print all verbs in it. [Hint: ending with "ing" or "ly"] (RegEx - \w+[l][y])
+2. WAP to accept a filename from user and print words having "end" in between them.
+3. WAP to accept a filename from user and delete comments from it.
+    [Hints]
+    - single line comments - starting with # ending with \n, use re.MULTILINE flag
+    - multiline comments - starting with ['''] or ["""] and ending with ['''] or ["""]
+4. WAP to accept a filename from user and print all words starting with capital letters.

@@ -1,0 +1,5 @@
+Iterator Generators in Python
+    - "yield"
+
+Assignment
+1. WAP to accept a list of nos from user and write a generator to return prime numbers in it.

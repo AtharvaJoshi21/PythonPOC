@@ -1,0 +1,21 @@
+Lambda Expressions in Python
+    - Syntax:
+        <func_name> = lambda <param>: <eval_param_expression>
+    - Use
+        <func_name>(<param_value>)
+
+Python as Functional Language
+    - Map in Python
+        - returns everything after mapping
+
+    - Filters in Python
+        - returns the data matching the filter criteria
+        - should have function with return type boolean
+
+    - Reduce in Python
+        - For Python 3.x => import "functools" module / from functools import reduce
+        - Till Python 2.7 => directly use "reduce" function
+        - Will have two args to function
+
+Assignments
+1. WAP to create generators of 5,10 and 15 using lambdas.
