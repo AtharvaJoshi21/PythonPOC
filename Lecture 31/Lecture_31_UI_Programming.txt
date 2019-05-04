@@ -1,0 +1,6 @@
+UI Programming in Python - 
+    - QTPy and tkinter => modules for UI Programming
+    - 
+
+HW Assignment - 
+1. WAP to fetch info about current share price of a given company name.

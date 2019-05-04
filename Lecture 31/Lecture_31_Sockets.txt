@@ -1,0 +1,10 @@
+Sockets in Python
+    - Connectionless [Broadcasting] (UDP sockets) and Connection-oriented (TCP sockets)
+    - Multicast [Limited broadcast]
+
+* AF_INET => Internet socket (Exposed to outside world)
+* AF_UNIX => Domain socket (Exposed only to local machines)
+
+HW Assignments - 
+1. Explore sample code of UDP sockets in GitHub repo.
+2. 
