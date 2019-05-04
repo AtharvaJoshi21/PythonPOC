@@ -1,0 +1,17 @@
+Creating Django Project (Step-by-step guide)
+    1. For windows - install Python, Pip (Package manager for python) and set PATH (For Linux, python comes as a built-in package)
+    2. Open CMD/Terminal and run commands -
+        a. pip [pip3 for python 3] install virtualenv
+        b. pip [pip3 for python 3] install virtualenvwrapper
+    3. Run following command to create a virtual environment
+        mkvirtualenv <environment_name>*
+    4. Run following command to work on created virtual environment
+        workon <environment_name>
+    5. Run following command to install Django in the virtual environment
+        pip [pip3 for python 3] install Django
+    6. Run following command to create a scaffolded project template using django admin tools
+        django-admin startproject <project_name>
+        - You'll be able to see the project structure
+    7.
+
+* If you face "mkvirtualenv: command not found" set the PATH of "virtualenvwrapper.sh" properly in Linux
