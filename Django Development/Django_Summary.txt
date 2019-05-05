@@ -12,6 +12,16 @@ Creating Django Project (Step-by-step guide)
     6. Run following command to create a scaffolded project template using django admin tools
         django-admin startproject <project_name>
         - You'll be able to see the project structure
-    7.
+    7. Installing xampp for ubuntu - 
+        - Install xampp using installation run package
+        - change port number of mysql db, if you've installed some other application which uses same port
+    8. Change the database connection properties in settings.py.
+    
 
 * If you face "mkvirtualenv: command not found" set the PATH of "virtualenvwrapper.sh" properly in Linux
+
+Issues faced while running the appliation using virtualenvwrapper
+1. mkvirtualenv and / or workon: command not found
+    - Resolution - run following command
+        - source "<path_to_"virtualenvwrapper.sh">"
+2. Unable to migrate the db as of now (Getting access denied error) [Last updated on 5/5/2019]
